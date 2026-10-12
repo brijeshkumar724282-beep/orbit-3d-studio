@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orbit Studio | 3D Creative Studio</title>
+<meta name="description" content="Orbit Studio crafts immersive 3D websites, motion and interactive scenes for bold brands.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"><span id="progressFill"></span></div>
+
+<header class="nav" id="top">
+  <div class="navInner">
+    <a href="#hero" class="brand" data-scroll>
+      <span class="brandDot" aria-hidden="true"></span>
+      <span>Orbit Studio</span>
+    </a>
+    <nav class="links" id="navLinks" aria-label="Primary">
+      <a href="#work" data-scroll>Work</a>
+      <a href="#services" data-scroll>Services</a>
+      <a href="#studio" data-scroll>Studio</a>
+      <a href="#contact" data-scroll>Contact</a>
+    </nav>
+    <div class="navRight">
+      <a href="#contact" class="btn btnSmall" data-scroll>Start a project</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="heroShade" aria-hidden="true"></div>
+    <div class="heroContent">
+      <p class="eyebrow revealHero">3D creative studio based everywhere</p>
+      <h1 class="revealHero">Websites with<br>real <span class="lime">depth</span> and motion</h1>
+      <p class="lede revealHero">We design and build immersive 3D websites, product scenes and motion systems that turn visitors into believers.</p>
+      <div class="heroCtas revealHero">
+        <a href="#work" class="btn btnLime" data-scroll>See our work</a>
+        <a href="#contact" class="btn btnGhost" data-scroll>Book a call</a>
+      </div>
+      <div class="heroMeta revealHero">
+        <div><strong>48+</strong><span>3D launches shipped</span></div>
+        <div><strong>12</strong><span>Awards for interaction</span></div>
+        <div><strong>60fps</strong><span>Motion as standard</span></div>
+      </div>
+    </div>
+    <div class="scrollHint" aria-hidden="true"><span></span>Scroll to explore</div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="tickerRow">
+      <span>Interactive 3D</span><i></i><span>Motion Design</span><i></i><span>WebGL Scenes</span><i></i><span>Creative Direction</span><i></i><span>Product Films</span><i></i><span>Interactive 3D</span><i></i><span>Motion Design</span><i></i><span>WebGL Scenes</span><i></i><span>Creative Direction</span><i></i><span>Product Films</span><i></i>
+    </div>
+  </div>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="sectionHead reveal">
+      <p class="eyebrow">Selected work</p>
+      <h2>Scenes that carry the story</h2>
+      <p class="sub">Drag through a few favorites. Each one is a live scene, not a static mockup.</p>
+    </div>
+    <div class="hWrap" id="hWrap">
+      <div class="hTrack" id="hTrack">
+        <article class="card reveal">
+          <div class="cardVisual v1" aria-hidden="true"><span class="orb o1"></span><span class="ring"></span></div>
+          <div class="cardBody">
+            <p class="cardTag">Product scene</p>
+            <h3>Nova Headphones</h3>
+            <p>A floating product stage with orbit controls and sound reactive lighting.</p>
+            <div class="cardFoot"><span>WebGL + Motion</span><span class="limeText">2026</span></div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="cardVisual v2" aria-hidden="true"><span class="orb o2"></span><span class="cube"></span></div>
+          <div class="cardBody">
+            <p class="cardTag">Brand world</p>
+            <h3>Pulse Athletics</h3>
+            <p>An endless runner style hero where the camera follows the athlete.</p>
+            <div class="cardFoot"><span>Direction + Build</span><span class="limeText">2025</span></div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="cardVisual v3" aria-hidden="true"><span class="orb o3"></span><span class="bars"><i></i><i></i><i></i><i></i><i></i></span></div>
+          <div class="cardBody">
+            <p class="cardTag">Data experience</p>
+            <h3>Helios Energy</h3>
+            <p>A particle field that visualizes live energy use across a city grid.</p>
+            <div class="cardFoot"><span>3D + Data Viz</span><span class="limeText">2025</span></div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="cardVisual v4" aria-hidden="true"><span class="orb o4"></span><span class="donut"></span></div>
+          <div class="cardBody">
+            <p class="cardTag">Launch site</p>
+            <h3>Lumen Skincare</h3>
+            <p>Soft studio lighting, floating ingredients and a calm scroll journey.</p>
+            <div class="cardFoot"><span>Design + 3D</span><span class="limeText">2024</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <p class="swipeNote">Scroll to move sideways on desktop. Swipe on mobile.</p>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="sectionHead reveal">
+      <p class="eyebrow">What we do</p>
+      <h2>Full stack for dimensional brands</h2>
+      <p class="sub">Strategy, scene design and performant code in one team.</p>
+    </div>
+    <div class="grid">
+      <div class="tile reveal">
+        <span class="tileNum">01</span>
+        <h3>3D Scene Design</h3>
+        <p>Concept, modelling, lighting and staging built for the web first, so scenes load fast and look cinematic.</p>
+        <ul><li>Hero scenes</li><li>Product stages</li><li>Lighting systems</li></ul>
+      </div>
+      <div class="tile reveal">
+        <span class="tileNum">02</span>
+        <h3>Interactive Build</h3>
+        <p>Three.js development with capped pixel ratio, lazy loading and fallbacks for every device.</p>
+        <ul><li>WebGL builds</li><li>Scroll choreography</li><li>Performance tuning</li></ul>
+      </div>
+      <div class="tile reveal">
+        <span class="tileNum">03</span>
+        <h3>Motion Language</h3>
+        <p>Easing curves, reveals and micro interactions that give your brand a recognizable physicality.</p>
+        <ul><li>Motion systems</li><li>Page transitions</li><li>Micro detail</li></ul>
+      </div>
+      <div class="tile reveal">
+        <span class="tileNum">04</span>
+        <h3>Launch and Care</h3>
+        <p>Hosting setup, analytics, A/B variants and seasonal scene refreshes after ship day.</p>
+        <ul><li>Deployment</li><li>Measurement</li><li>Season refreshes</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDIO / STATS -->
+  <section class="studio" id="studio">
+    <div class="studioGrid">
+      <div class="reveal">
+        <p class="eyebrow">The studio</p>
+        <h2>Small team, deep craft</h2>
+        <p class="sub">Nine designers and engineers. One shared obsession with space, light and timing. We take four projects per quarter and give each one a live 3D stage.</p>
+        <div class="stats">
+          <div class="stat"><strong><span class="count" data-count="48">0</span>+</strong><span>Projects shipped</span></div>
+          <div class="stat"><strong><span class="count" data-count="97">0</span>%</strong><span>Clients who return</span></div>
+          <div class="stat"><strong><span class="count" data-count="14">0</span></strong><span>Design awards</span></div>
+          <div class="stat"><strong><span class="count" data-count="60">0</span>fps</strong><span>Motion target</span></div>
+        </div>
+      </div>
+      <figure class="quote reveal">
+        <blockquote>“Orbit turned our flat product page into a place people want to visit. Time on page tripled and the scene still runs flawlessly on phones.”</blockquote>
+        <figcaption>
+          <span class="avatar" aria-hidden="true">MK</span>
+          <span><strong>Maya Chen</strong><em>Founder, Lumen Skincare</em></span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contactGrid">
+      <div class="reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Tell us about your world</h2>
+        <p class="sub">Share a few details and we reply within two business days with ideas and a fixed quote.</p>
+        <ul class="contactList">
+          <li><strong>Email</strong><span>hello@orbitstudio.site</span></li>
+          <li><strong>Studio hours</strong><span>Mon to Fri, 9 to 6 CET</span></li>
+          <li><strong>Currently booking</strong><span>Two slots for next quarter</span></li>
+        </ul>
+      </div>
+      <form id="contactForm" class="form reveal" novalidate>
+        <label>Your name
+          <input type="text" name="name" id="fName" placeholder="Ada Lovelace" autocomplete="name">
+          <small class="err" id="eName"></small>
+        </label>
+        <label>Email address
+          <input type="email" name="email" id="fEmail" placeholder="ada@company.com" autocomplete="email">
+          <small class="err" id="eEmail"></small>
+        </label>
+        <label>Project budget
+          <select name="budget" id="fBudget">
+            <option value="">Select a range</option>
+            <option>Under 5k</option>
+            <option>5k to 15k</option>
+            <option>15k to 40k</option>
+            <option>40k plus</option>
+          </select>
+          <small class="err" id="eBudget"></small>
+        </label>
+        <label>Project details
+          <textarea name="message" id="fMsg" rows="4" placeholder="What should visitors feel in the first 10 seconds?"></textarea>
+          <small class="err" id="eMsg"></small>
+        </label>
+        <button type="submit" class="btn btnLime btnFull">Send inquiry</button>
+        <p class="formOk" id="formOk" role="status" hidden>Thanks. Your message is ready to send. We will be in touch soon.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footInner">
+    <div class="footBrand">
+      <span class="brandDot" aria-hidden="true"></span>
+      <strong>Orbit Studio</strong>
+      <p>Immersive 3D websites for bold brands.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#work" data-scroll>Work</a>
+      <a href="#services" data-scroll>Services</a>
+      <a href="#studio" data-scroll>Studio</a>
+      <a href="#contact" data-scroll>Contact</a>
+    </nav>
+    <button class="btn btnGhost" id="toTop">Back to top</button>
+  </div>
+  <p class="copy">© 2026 Orbit Studio. All rights reserved.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
